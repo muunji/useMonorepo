@@ -5,9 +5,10 @@ export default function App() {
   const [message, setMessage]= useState('')
 
   useEffect(()=>{
-    fetch('http://192.168.0.10:3001/hello') //ip 주소 필요
+    fetch('http://192.168.0.108:3001/hello') //ip 주소 필요
     .then(res=>res.json())
     .then(data=>setMessage(data.message))
+    .catch(err=>console.log('mobile 데이터 오류 발생',err))
   },[])
 
   return (
