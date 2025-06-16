@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".", //절대 경로 기준
+    "paths": {
+      "@server/*":["packages/server/src/*"],
+      "@web/*":["apps/web/src/*"],
+      "@mobile/*":["apps/mobile/*"],
+      "@desktop/*":["apps/desktop/*"]
+    }
+  }
+}

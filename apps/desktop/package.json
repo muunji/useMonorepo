@@ -1,0 +1,17 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^36.4.0",
+    "wait-on": "^8.0.3"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^24.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
