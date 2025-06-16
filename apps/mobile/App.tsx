@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {  Text, View } from 'react-native';
+import { useState, useEffect } from 'react';
 
 export default function App() {
+  const [message, setMessage]= useState('')
+
+  useEffect(()=>{
+    fetch('http://192.168.0.10:3001/hello') //ip 주소 필요
+    .then(res=>res.json())
+    .then(data=>setMessage(data.message))
+  },[])
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <Text>{message||'로딩중...'}</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
