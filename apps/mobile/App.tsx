@@ -5,24 +5,26 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+// import { NewAppScreen } from '@react-native/new-app-screen';
+import { useEffect, useState } from 'react';
+import { View, Text } from 'react-native';
 
 function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+
+  const [message, setMessage] = useState('')
+
+  useEffect(()=>{
+    fetch('http://192.168.0.108:3001/hello')
+    .then(res=>res.json())
+    .then(data => setMessage(data.message))
+    .catch(err=>console.log('데이터 불러오기 실패',err))
+  },[])
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+    <View >
+      {message || '로딩중...'}
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
