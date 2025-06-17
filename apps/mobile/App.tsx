@@ -2,7 +2,7 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
- * @format
+//  * @format
  */
 
 // import { NewAppScreen } from '@react-native/new-app-screen';
