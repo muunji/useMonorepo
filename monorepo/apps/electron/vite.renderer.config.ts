@@ -6,13 +6,13 @@ import path from 'path';
 export default defineConfig({
   root:path.resolve(__dirname,'src/renderer'),
   build:{
-    outDir:'../../dist/apps/electron/renderer',
+    outDir:'../../../../dist/apps/electron/renderer',
     emptyOutDir:true,
   },
   plugins:[react()],
   resolve:{
     alias:{
-      '@':path.resolve(__dirname,'./src/renderer')
+      '@':path.resolve(__dirname,'src/renderer')
     }
   }
 })

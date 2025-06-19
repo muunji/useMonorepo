@@ -10,8 +10,8 @@ function createWindow(){
     webPreferences:{nodeIntegration:true, contextIsolation:false},
   })
 
-  // React가 빌드외어 있는 파일 경로 지정
+  // React가 빌드되어 있는 파일 경로 지정
   win.loadFile(path.join(__dirname,'renderer','index.html'))
 }
-
+// console.log(__dirname)
 app.whenReady().then(createWindow)
