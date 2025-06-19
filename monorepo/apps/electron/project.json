@@ -13,7 +13,7 @@
         "platform": "node",
         "outputPath": "dist/apps/electron",
         "format": ["cjs"],
-        "bundle": false,
+        "bundle": true,
         "main": "apps/electron/src/main.ts",
         "tsConfig": "apps/electron/tsconfig.app.json",
         "assets": ["apps/electron/src/assets"],
