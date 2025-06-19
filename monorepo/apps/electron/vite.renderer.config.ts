@@ -14,5 +14,6 @@ export default defineConfig({
     alias:{
       '@':path.resolve(__dirname,'src/renderer')
     }
-  }
+  },
+  base:'./' //index.html에서 모든 리소스가 상대경로로 참조
 })

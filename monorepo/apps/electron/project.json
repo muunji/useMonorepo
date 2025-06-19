@@ -23,7 +23,8 @@
           "outExtension": {
             ".js": ".js"
           }
-        }
+        },
+        "deleteOutputPath":false
       },
       "configurations": {
         "development": {},
