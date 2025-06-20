@@ -16,7 +16,7 @@ export function App() {
   return (
     <div>
       {/* <NxWelcome title="web" /> */}
-      <TestBtn onClick={()=>setIsShow(!isShow)}/>
+      <TestBtn onPress={()=>setIsShow(!isShow)}/>
         {isShow && <h1>{text}</h1>}
       
     </div>

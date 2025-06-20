@@ -18,7 +18,7 @@ export const App = () => {
 
   return (
     <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: '#fff'}}>
-      <TestBtn onClick={()=> setIsShow(!isShow)}/>
+      <TestBtn onPress={()=> setIsShow(!isShow)}/>
         {isShow && <Text style={{color:'#000'}}>{text}</Text>}
       
     </View>
