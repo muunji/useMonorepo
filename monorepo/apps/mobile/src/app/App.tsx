@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useEffect, useState } from 'react';
 import { Text, View } from 'react-native'
+import { TestBtn } from '@monorepo/ui'
 
 export const App = () => {
   const [text, setText] = useState('')
+  const [isShow, setIsShow] = useState(false)
 
   useEffect(()=>{
     console.log('실행 중...');
@@ -16,7 +18,9 @@ export const App = () => {
 
   return (
     <View style={{flex:1, justifyContent:'center', alignItems:'center', backgroundColor: '#fff'}}>
-      <Text style={{color:'#000'}}>{text}</Text>
+      <TestBtn onClick={()=> setIsShow(!isShow)}/>
+        {isShow && <Text style={{color:'#000'}}>{text}</Text>}
+      
     </View>
   )
 };
