@@ -3,6 +3,7 @@
     "rootDir": ".",
     "baseUrl": ".",
     "paths": {
+      "@monorepo/ui": ["libs/shared/ui/src/index.ts"],
       "@server/*": ["packages/server/src/*"],
       "@web/*": ["apps/web/src/*"]
     },
