@@ -6,9 +6,12 @@
     "@react-native/metro-config": "*",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
+    "metro-config": "*",
     "react": "*",
-    "react-native": "*",
-    "react-native-svg": "*",
-    "metro-config": "*"
+    "react-native": "0.80.0",
+    "react-native-svg": "*"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "12.3.4"
   }
 }

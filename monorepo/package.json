@@ -9,7 +9,6 @@
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-native": "^0.80.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -27,9 +26,6 @@
     "@nx/vite": "21.2.0",
     "@nx/web": "21.2.0",
     "@nx/workspace": "21.2.0",
-    "@react-native-community/cli": "~15.0.1",
-    "@react-native-community/cli-platform-android": "~15.0.1",
-    "@react-native-community/cli-platform-ios": "~15.0.1",
     "@react-native/babel-preset": "~0.76.3",
     "@react-native/metro-config": "~0.76.3",
     "@swc-node/register": "~1.9.1",
