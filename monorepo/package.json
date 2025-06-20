@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build:renderer": "vite build --config apps/electron/vite.renderer.config.ts"
+    "build:renderer": "vite build --config apps/electron/vite.renderer.config.ts",
+    "dev:web":"nx run web:serve",
+    "dev:electron":"electron dist/apps/electron/main.js",
+    "dev:web-electron":"concurrently \"yarn dev:web\" \"yarn dev:electron\""
+
   },
   "private": true,
   "dependencies": {
@@ -50,6 +54,7 @@
     "@vitest/ui": "^3.0.0",
     "autoprefixer": "10.4.13",
     "babel-jest": "^29.7.0",
+    "concurrently": "^9.1.2",
     "electron": "^36.4.0",
     "esbuild": "^0.19.2",
     "eslint": "^9.8.0",
