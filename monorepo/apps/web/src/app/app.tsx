@@ -1,8 +1,10 @@
 // import NxWelcome from './nx-welcome';
 import { useState, useEffect } from "react";
+import { TestBtn } from '@monorepo/ui'
 
 export function App() {
   const [text, setText] = useState('')
+  const [isShow, setIsShow]= useState(false)
 
   useEffect(()=>{
     fetch('http://localhost:3000/hello')
@@ -14,7 +16,9 @@ export function App() {
   return (
     <div>
       {/* <NxWelcome title="web" /> */}
-      <h1>{text}</h1>
+      <TestBtn onClick={()=>setIsShow(!isShow)}/>
+        {isShow && <h1>{text}</h1>}
+      
     </div>
   );
 }
