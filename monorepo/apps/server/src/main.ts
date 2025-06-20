@@ -9,6 +9,11 @@ app.get('/', (req, res) => {
   res.send({ message: 'Hello API' });
 });
 
+// 테스트용
+app.get('/hello',(req,res)=>{
+  res.send({text:'TEST SUCCESS'})
+})
+
 app.listen(port, host, () => {
   console.log(`[ ready ] http://${host}:${port}`);
 });
