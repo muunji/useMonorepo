@@ -8,7 +8,7 @@ export const App = () => {
   useEffect(()=>{
     console.log('실행 중...');
     
-    fetch('http://localhost:3000/hello')
+    fetch('http://10.0.2.2:3000/hello')
     .then(res=>{ console.log('응답',res.ok); return res.json()})
     .then(data=> {setText(data.text); console.log('data',data)})
     .catch(err=>console.error(err))
