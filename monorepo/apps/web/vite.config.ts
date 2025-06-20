@@ -28,4 +28,6 @@ export default defineConfig(() => ({
       transformMixedEsModules: true,
     },
   },
+  // react-native 컴포넌트 동작하도록 설정
+  alias:{'react-native$':'react-native-web'}
 }));
