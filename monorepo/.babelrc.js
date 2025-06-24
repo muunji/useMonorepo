@@ -16,13 +16,31 @@ module.exports = function (api){
           useBuiltIns : 'usage'
         }]
       ],
-      plugins:[],
+      plugins:[
+        ['module-resolver',{
+          root: ['./'],
+          alias:{
+            '@':'./apps/mobile/src',
+            '@libs':'./libs',
+            '@libs/ui':'./libs/shared/ui/src'
+          },
+          extensions:['.ts','.tsx','.js','.json']
+        }]
+      ],
     };
   }
   return {
     presets: [
       ['module:metro-react-native-babel-preset',{useTransformReactJSX: true}]
     ],
-    plugins:[],
+    plugins:['module-resolver',{
+      root:['./'],
+      alias:{
+        '@':'./apps/mobile/src',
+        '@libs':'./libs',
+        '@libs/ui':'./libs/shared/ui/src'
+      },
+      extensions:['.ts', '.tsx','.js','.json']
+    }],
   }
 }

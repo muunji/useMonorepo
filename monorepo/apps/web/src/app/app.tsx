@@ -1,6 +1,6 @@
 // import NxWelcome from './nx-welcome';
 import { useState, useEffect } from "react";
-import { TestBtn } from '@monorepo/ui'
+import { TestBtn } from '@libs/ui'
 
 export function App() {
   const [text, setText] = useState('')

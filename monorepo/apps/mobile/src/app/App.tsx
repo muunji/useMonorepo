@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import React, { useEffect, useState } from 'react';
 import { Text, View } from 'react-native'
-import { TestBtn } from '@monorepo/ui'
+import { TestBtn } from '@libs/ui'
 
 export const App = () => {
   const [text, setText] = useState('')

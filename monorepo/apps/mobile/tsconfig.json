@@ -7,7 +7,12 @@
     "moduleResolution": "node",
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "declaration": true
+    "declaration": true,
+    "baseUrl": ".",
+    "paths":{
+      "@/*":["src/*"],
+      "@libs/ui":["../../libs/shared/ui/src/index.ts"]
+    }
   },
   "files": [],
   "include": [],
