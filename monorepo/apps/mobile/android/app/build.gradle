@@ -1,6 +1,7 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+// apply from: "../../../../node_modules/react-native/react.gradle"
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -51,7 +52,7 @@ react {
     // hermesFlags = ["-O", "-output-source-map"]
 
     /* Autolinking */
-    autolinkLibrariesWithApp()
+    // autolinkLibrariesWithApp()
 }
 
 /**
@@ -117,3 +118,7 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+// 디버깅
+println('rootPj'+rootProject)
+println('pjDir'+project.projectDir)
