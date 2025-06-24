@@ -12,6 +12,6 @@
     "react-native-svg": "*"
   },
   "devDependencies": {
-    "@react-native-community/cli": "12.3.4"
+    "@react-native-community/cli": "^18.0.0"
   }
 }
