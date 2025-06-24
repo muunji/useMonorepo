@@ -3,12 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Text, View } from 'react-native'
 import { TestBtn } from '@libs/ui'
 
+
 export const App = () => {
   const [text, setText] = useState('')
   const [isShow, setIsShow] = useState(false)
-
+  
   useEffect(()=>{
     console.log('실행 중...');
+    console.log(require.resolve('@libs/ui'))
     
     fetch('http://10.0.2.2:3000/hello')
     .then(res=>{ console.log('응답',res.ok); return res.json()})

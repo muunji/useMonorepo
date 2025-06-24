@@ -21,7 +21,7 @@ module.exports = function (api){
           root: ['./'],
           alias:{
             '@':'./apps/mobile/src',
-            '@libs':'./libs',
+            // '@libs':'./libs',
             '@libs/ui':'./libs/shared/ui/src'
           },
           extensions:['.ts','.tsx','.js','.json']
@@ -33,7 +33,7 @@ module.exports = function (api){
     presets: [
       ['module:metro-react-native-babel-preset',{useTransformReactJSX: true}]
     ],
-    plugins:['module-resolver',{
+    plugins:[['module-resolver',{
       root:['./'],
       alias:{
         '@':'./apps/mobile/src',
@@ -41,6 +41,6 @@ module.exports = function (api){
         '@libs/ui':'./libs/shared/ui/src'
       },
       extensions:['.ts', '.tsx','.js','.json']
-    }],
+    }]],
   }
 }

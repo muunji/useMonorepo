@@ -11,7 +11,7 @@
     "baseUrl": ".",
     "paths":{
       "@/*":["src/*"],
-      "@libs/ui":["../../libs/shared/ui/src/index.ts"]
+      "@libs/ui":["../../libs/shared/ui/src"]
     }
   },
   "files": [],
