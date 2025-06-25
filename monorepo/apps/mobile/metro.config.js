@@ -28,7 +28,7 @@ const customConfig = {
       new RegExp(`${workspaceRoot}/node_modules/.*`)
     ]),
     extraNodeModules:{
-      '@libs':path.resolve(workspaceRoot,'libs'),
+      // '@libs':path.resolve(workspaceRoot,'libs'),
       // ...require('node-libs-react-native'),
       react: path.resolve(workspaceRoot,'node_modules/react'),
       'react-native':path.resolve(workspaceRoot,'node_modules/react-native'),

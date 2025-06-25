@@ -36,7 +36,8 @@ export default defineConfig(() => ({
       'react-native$':'react-native-web',
       'react-native':'react-native-web',
       '@':path.resolve(__dirname,'./src'),
-      '@libs':path.resolve(__dirname,'../../libs')
+      // '@libs':path.resolve(__dirname,'../../libs'),
+      '@libs/ui':path.resolve(__dirname,'../../libs/shared/ui/src')
 
     }
 

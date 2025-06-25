@@ -37,7 +37,7 @@ module.exports = function (api){
       root:['./'],
       alias:{
         '@':'./apps/mobile/src',
-        '@libs':'./libs',
+        // '@libs':'./libs',
         '@libs/ui':'./libs/shared/ui/src'
       },
       extensions:['.ts', '.tsx','.js','.json']

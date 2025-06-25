@@ -4,7 +4,7 @@
     "baseUrl": ".",
     "paths": {
       "@libs/ui": ["libs/shared/ui/src"],
-      "@server/*": ["packages/server/src/*"],
+      "@server/*": ["apps/server/src/*"],
       "@web/*": ["apps/web/src/*"]
     },
     "strict": true
