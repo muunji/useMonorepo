@@ -10,7 +10,6 @@ export const App = () => {
   
   useEffect(()=>{
     console.log('실행 중...');
-    console.log(require.resolve('@libs/ui'))
     
     fetch('http://10.0.2.2:3000/hello')
     .then(res=>{ console.log('응답',res.ok); return res.json()})
